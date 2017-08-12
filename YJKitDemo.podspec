@@ -130,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-    non_arc_file = 'YJkit/GDataXML/GDataXMLNode.m'
+#non_arc_file = 'YJkit/GDataXML/GDataXMLNode.m'
 
 	s.requires_arc = true
 	s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
@@ -139,12 +139,12 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
 
-    s.exclude_files = non_arc_file
+#s.exclude_files = non_arc_file
 
-	s.subspec 'no-arc' do |sp|
-	sp.source_files = non_arc_file
-	sp.requires_arc = false
-	end
+#s.subspec 'no-arc' do |sp|
+#sp.source_files = non_arc_file
+#sp.requires_arc = false
+#end
 
 
 end
