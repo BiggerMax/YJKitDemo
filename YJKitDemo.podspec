@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+							YJKit封装了系统常用方法,实现快捷开发
                    DESC
 
   s.homepage     = "https://github.com/BiggerMax/YJKitDemo"
@@ -129,9 +130,12 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
+	non_arc_file = 'YJKit/GDataXML/GDataXMLNode.m'
+
+	s.requires_arc = true
+	s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.requires_arc = true
 
-    s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
 
