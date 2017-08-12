@@ -634,6 +634,7 @@
 				9D77FF1C1F3EF73D008D3708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
